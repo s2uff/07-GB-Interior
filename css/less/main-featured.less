@@ -21,6 +21,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  border-bottom: 1px solid #6c6c6c;
 }
 
 .categorySwitcher-links {
@@ -35,13 +36,13 @@
 
   padding: 0 20px 15px 20px;
   box-sizing: border-box;
-  border-bottom: 1px solid #6c6c6c;
+  border-bottom: 2px solid transparent;
   transition: 0.2s ease-in-out;
 }
 
 .categorySwitcher-links:hover {
   color: #212121;
-  border-bottom: 3px solid #212121;
+  border-bottom: 2px solid #212121;
 }
 
 .categorySwitcher-links:active {
@@ -84,5 +85,91 @@
 }
 
 .exploreAll:active {
+  transform: scale(1);
+}
+
+.featured-products {
+  clear: both;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.featured-product {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.featured-product-img {
+  transition: 0.2s ease-in-out;
+}
+
+.featured-product-a {
+  display: none;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 2px 5px 0 rgba(33,33,33,0.34);
+  border-radius: 24px;
+
+  position: absolute;
+  top: 62px;
+  left: 111px;
+
+  transition: 0.2s ease-in-out;
+}
+
+.featured-product-span {
+  display: none;
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  color: #212121;
+  text-transform: capitalize;
+
+  position: absolute;
+  top: 129px;
+  left: 63px;
+
+  transition: 0.2s ease-in-out;
+}
+
+.featured-product-p {
+  display: none;
+  font-family: Montserrat_300, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6c6c6c;
+
+  text-align: center;
+  width: 210px;
+
+  position: absolute;
+  top: 169px;
+  left: 32px;
+
+  transition: 0.2s ease-in-out;
+}
+
+.featured-product:hover .featured-product-img{
+  opacity: 0.3;
+}
+
+.featured-product:hover .featured-product-a,
+.featured-product:hover .featured-product-span,
+.featured-product:hover .featured-product-p{
+  display: block;
+}
+
+.featured-product-a:hover {
+  transform: scale(1.1);
+}
+
+.featured-product-a:active {
   transform: scale(1);
 }
