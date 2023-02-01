@@ -1,0 +1,242 @@
+/*Header*/
+
+.main-header {
+  .forcontainer;
+  padding: 60px 20px 20px 100px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  background-image: url("../img/header_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-top {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.logo {
+  display: block;
+  margin: 0;
+  padding: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo:active {
+  transform: scale(0.9);
+}
+
+.logo-svg {
+  fill: #212121;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-link {
+  display: block;
+  text-decoration: none;
+  padding: 0 0 10px 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Montserrat_300, Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #8c8c8c;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-link:nth-child(1) {
+  width: 75px;
+}
+
+.menu-link:nth-child(2) {
+  width: 114px;
+}
+
+.menu-link:nth-child(3) {
+  width: 97px;
+}
+
+.menu-link:nth-child(4) {
+  width: 128px;
+}
+
+.menu-link:nth-child(5) {
+  width: 100px;
+  margin: 0 15px 0 0;
+}
+
+.menu-link:hover {
+  font-family: Montserrat_700, Arial, sans-serif;
+  color: #212121;
+  border-bottom: 3px solid #212121;
+}
+
+#menu-search {
+  width: 23px;
+  height: 23px;
+  margin: 0 150px 0 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/search_btn.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.2s ease-in-out;
+}
+
+#menu-search:hover {
+  transform: scale(1.2);
+}
+
+#menu-search:focus {
+  width: 173px;
+  margin: 0;
+  border-radius: 5px;
+  background-image: none;
+  transform: scale(1.1);
+  outline: 1px solid #8c8c8c;
+  color: #8c8c8c;
+}
+
+.header-bot {
+  margin: 0;
+  padding: 283px 0 0 0;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.header-info {
+  margin: 0 0 140px 0;
+  padding: 0;
+}
+
+.header-info-ticket {
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #43a047;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+
+.header-info-h1 {
+  font-family: Montserrat_100, Arial, sans-serif;
+  font-size: 62px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #212121;
+  margin: 0 0 10px 0;
+  padding: 0;
+  letter-spacing: -3px;
+}
+
+.header-info-p {
+  font-family: Montserrat_300, Arial, sans-serif;
+  font-size: 14px;
+  color: #6c6c6c;
+  line-height: 24px;
+  width: 470px;
+
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+.header-info-link {
+  display: block;
+  margin: 0;
+  padding: 0 0 0 30px;
+  box-sizing: border-box;
+
+  width: 212px;
+  height: 45px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(33, 33, 33, 0.34);
+  border-radius: 22.5px;
+
+  text-decoration: none;
+
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #212121;
+
+  position: relative;
+
+  transition: 0.2s ease-in-out;
+}
+
+.header-info-link:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #212121;
+  border-right: 2px solid #212121;
+  position: absolute;
+  top: 16px;
+  right: 19px;
+  transition: 0.2s ease-in-out;
+  transform: rotate(45deg);
+}
+
+.header-info-link:hover {
+  background-color: #212121;
+  color: #ffffff;
+}
+
+.header-info-link:hover:after {
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+}
+
+.header-pagination {
+  align-self: center;
+  display: flex;
+}
+
+.header-pagination-dot {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 7px;
+  border-radius: 30px;
+  background-color: #c7c7c7;
+  outline: 2px solid transparent;
+  transition: 0.2s ease-in-out;
+}
+
+.header-pagination-dot:hover {
+  background-color: #212121;
+  outline: 2px solid #212121;
+}
+
+.header-pagination-dot:active {
+  outline: 2px solid transparent;
+}
+
