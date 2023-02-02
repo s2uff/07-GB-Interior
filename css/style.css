@@ -19,6 +19,51 @@
   width: 1366px;
   margin: 0 auto;
 }
+/* Универсальная кнопка Order US */
+.order-btn {
+  display: block;
+  margin: 0;
+  padding: 0 0 0 30px;
+  box-sizing: border-box;
+  width: 212px;
+  height: 45px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px 0 rgba(33, 33, 33, 0.34);
+  border-radius: 22.5px;
+  text-decoration: none;
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #212121;
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+.order-btn:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #212121;
+  border-right: 2px solid #212121;
+  position: absolute;
+  top: 16px;
+  right: 19px;
+  transition: 0.2s ease-in-out;
+  transform: rotate(45deg);
+}
+.order-btn:hover {
+  background-color: #212121;
+  color: #ffffff;
+}
+.order-btn:hover:after {
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+}
+.order-btn:active {
+  transform: scale(0.9);
+}
 /*Header*/
 .main-header {
   width: 1366px;
@@ -161,47 +206,6 @@
   width: 470px;
   margin: 0 0 30px 0;
   padding: 0;
-}
-.header-info-link {
-  display: block;
-  margin: 0;
-  padding: 0 0 0 30px;
-  box-sizing: border-box;
-  width: 212px;
-  height: 45px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px 0 rgba(33, 33, 33, 0.34);
-  border-radius: 22.5px;
-  text-decoration: none;
-  font-family: Montserrat_700, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 45px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #212121;
-  position: relative;
-  transition: 0.2s ease-in-out;
-}
-.header-info-link:after {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #212121;
-  border-right: 2px solid #212121;
-  position: absolute;
-  top: 16px;
-  right: 19px;
-  transition: 0.2s ease-in-out;
-  transform: rotate(45deg);
-}
-.header-info-link:hover {
-  background-color: #212121;
-  color: #ffffff;
-}
-.header-info-link:hover:after {
-  border-top: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
 }
 .header-pagination {
   align-self: center;
@@ -370,4 +374,57 @@
 }
 .featured-product-a:active {
   transform: scale(1);
+}
+/* Блок EXCLUSIVE с 2 стульями */
+.exclusive {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.exclusive-itm {
+  margin: 0;
+  padding: 228px 259px 256px 52px;
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.exclusive-itm:nth-child(1) {
+  background-color: #e8e9eb;
+  background-image: url("../img/exclusive_bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.exclusive-itm:nth-child(2) {
+  background-color: #f7f7f7;
+  background-image: url("../img/exclusive_bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.exclusive-itm-ticket {
+  padding: 0;
+  margin: 0 0 18px 0;
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #1e88e5;
+}
+.exclusive-itm-h {
+  padding: 0;
+  margin: 0 0 24px 0;
+  text-transform: capitalize;
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 36px;
+  color: #212121;
+}
+.exclusive-itm-p {
+  padding: 0;
+  margin: 0 0 34px 0;
+  font-family: Montserrat_300, Arial, sans-serif;
+  font-size: 14.1px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #6c6c6c;
 }
