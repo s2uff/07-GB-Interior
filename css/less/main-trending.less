@@ -1,0 +1,43 @@
+/* Блок Trending Products */
+
+.trending {
+  margin: 0;
+  padding: 120px 100px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.trending-h{
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 36px;
+  color: #212121;
+}
+
+.trending-container {
+  clear: both;
+  margin: 100px 0 0 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.trending-itm {
+  display: block;
+  transition: 0.2s ease-in-out;
+}
+
+.trending-itm:hover {
+  transform: scale(1.1);
+}
+
+.trending-itm:active {
+  transform: scale(1);
+}
+
