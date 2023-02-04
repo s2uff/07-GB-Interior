@@ -64,6 +64,28 @@
 .order-btn:active {
   transform: scale(0.9);
 }
+/* Кнопки пагинации */
+.pagination {
+  align-self: center;
+  display: flex;
+}
+.pagination-dot {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 7px;
+  border-radius: 30px;
+  background-color: #c7c7c7;
+  outline: 2px solid transparent;
+  transition: 0.2s ease-in-out;
+}
+.pagination-dot:hover {
+  background-color: #212121;
+  outline: 2px solid #212121;
+}
+.pagination-dot:active {
+  outline: 2px solid transparent;
+}
 /* Клавища Explore all */
 .exploreAll {
   display: block;
@@ -241,27 +263,6 @@
   width: 470px;
   margin: 0 0 30px 0;
   padding: 0;
-}
-.header-pagination {
-  align-self: center;
-  display: flex;
-}
-.header-pagination-dot {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 0 7px;
-  border-radius: 30px;
-  background-color: #c7c7c7;
-  outline: 2px solid transparent;
-  transition: 0.2s ease-in-out;
-}
-.header-pagination-dot:hover {
-  background-color: #212121;
-  outline: 2px solid #212121;
-}
-.header-pagination-dot:active {
-  outline: 2px solid transparent;
 }
 /* Main */
 /* Section Featured-New */
@@ -462,4 +463,50 @@
 }
 .trending-itm:active {
   transform: scale(1);
+}
+/* Блок Hot Deal */
+.hotDeal {
+  margin: 0;
+  padding: 287px 0 20px 100px;
+  box-sizing: border-box;
+  background-color: #dee7f2;
+  background-image: url("../img/hotdeal_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.hotDeal-info {
+  margin: 0 0 226px 0;
+  padding: 0;
+}
+.hotDeal-info-ticket {
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #e53935;
+  padding: 0;
+  margin: 0 0 8px 0;
+}
+.hotDeal-info-h1 {
+  font-family: Montserrat_100, Arial, sans-serif;
+  font-size: 62px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #212121;
+  margin: 0 0 10px 0;
+  padding: 0;
+  letter-spacing: -3px;
+}
+.hotDeal-info-p {
+  font-family: Montserrat_300, Arial, sans-serif;
+  font-size: 14px;
+  color: #6c6c6c;
+  line-height: 24px;
+  width: 470px;
+  margin: 0 0 30px 0;
+  padding: 0;
 }
