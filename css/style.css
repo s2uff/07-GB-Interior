@@ -837,3 +837,84 @@
   color: #6c6c6c;
   text-decoration: none;
 }
+/* Дополнительные стили для Header Contacts */
+.main-header-contacts {
+  background-image: none;
+  padding: 60px 20px 56px 100px;
+}
+.header-bot-contacts {
+  padding: 170px 0 0 0;
+}
+.header-contacts-h1 {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat_100, Arial, sans-serif;
+  font-size: 62px;
+  font-weight: 100;
+  color: #212121;
+  text-transform: capitalize;
+}
+.contacts-main {
+  width: 1366px;
+  margin: 0 auto;
+  padding: 71px 98px 122px 98px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contacts-adress-link {
+  display: flex;
+  margin: 0;
+  padding: 48px 50px 63px 50px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 0.9;
+  border: 1px solid #9c9c9c;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+.contacts-adress-link:hover {
+  transform: scale(1.1);
+}
+.contacts-adress-link:active {
+  transform: scale(1);
+}
+.contacts-adress-link-svg {
+  fill: black;
+  margin: 0 0 34px 0;
+}
+.contacts-adress-link-h {
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #212121;
+  margin: 0 0 23px 0;
+}
+.contacts-adress-link-category {
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #6c6c6c;
+  text-transform: capitalize;
+  margin: 0;
+}
+.contacts-adress-link-data {
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #212121;
+  margin: 0 0 10px 0;
+}
+.contacts-adress-link-street {
+  font-family: Montserrat_300, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #6c6c6c;
+}
