@@ -1,0 +1,29 @@
+/* Дополнительные стили для страницы Products */
+
+.productsCategorySwitcher-link {
+  font-size: 18px;
+}
+
+#refresh-btn-activator {
+  display: none;
+}
+
+.refresh-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 71px;
+
+  width: 43px;
+  height: 31px;
+
+  background-color: transparent;
+  border: none;
+
+  background-image: url("../img/refresh.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#refresh-btn-activator:checked ~ .refresh-btn{
+  animation: refresh 2s linear;
+}
