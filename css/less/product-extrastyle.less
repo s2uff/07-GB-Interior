@@ -1,0 +1,181 @@
+/* Стили дла страницы продукта */
+
+.product-main-header {
+  padding-bottom: 0;
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.product-main-header-top {
+  padding-bottom: 30px;
+}
+
+.product-main {
+  .forcontainer;
+}
+
+.product-categories {
+  clear: both;
+  padding: 30px 350px;
+  box-sizing: border-box;
+
+  background-color: #f4f4f4;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-categories-link {
+  text-decoration: none;
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6c6c6c;
+
+  transition: 0.2s ease-in-out;
+}
+
+.product-categories-link:hover {
+  color: #212121;
+}
+
+.product-categories-link:active {
+  transform: scale(0.9);
+}
+
+.product {
+  margin: 0;
+  padding: 72px 132px 40px 98px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.product-images {
+  margin: 0 60px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product-img-switcher {
+  display: flex;
+}
+
+.product-img-switcher-link {
+  margin: 11px 5px 0 5px;
+  padding: 0;
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.product-img-switcher-link:nth-child(1) {
+  background-image: url("../img/product_img_switcher1.jpg");
+}
+
+.product-img-switcher-link:nth-child(2) {
+  background-image: url("../img/product_img_switcher2.jpg");
+}
+
+.product-img-switcher-link:nth-child(3) {
+  background-image: url("../img/product_img_switcher3.jpg");
+}
+
+.product-info {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product-info-heading {
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #212121;
+
+  text-transform: capitalize;
+  margin: 30px 0 13px 0;
+}
+
+.product-info-ticket {
+  font-family: Montserrat_700, Arial, sans-serif;
+  font-size: 18.1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #e53935;
+
+  margin: 0 0 36px 0;
+}
+
+.product-info-price {
+  font-family: Montserrat_300, Arial, sans-serif;
+  font-size: 36.1px;
+  font-weight: 300;
+  color: #212121;
+
+  margin: 0 0 30px 0;
+}
+
+.product-info-price-value {
+  font-size: 72.1px;
+}
+
+.product-order-btn {
+  width: 510px;
+  height: 71px;
+  background-color: #f44336;
+  box-shadow: 0 2px 5px 0 rgba(33,33,33,0.34);
+  border-radius: 35px;
+
+  color: #ffffff;
+  line-height: 71px;
+
+  padding: 0 0 0 160px;
+  margin-bottom: 49px;
+}
+
+.product-order-btn:after {
+  width: 13px;
+  height: 13px;
+  border-top: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+
+  top: 27px;
+  right: 177px;
+}
+
+.product-order-btn:hover:after {
+  border-top: 4px solid #ffffff;
+  border-right: 4px solid #ffffff;
+}
+
+.product-info-description {
+  margin: 0 0 15px 0;
+  padding: 0;
+
+  font-family: Montserrat_300, Arial, sans-serif;
+  font-size: 16.1px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #212121;
+
+  align-self: flex-start;
+}
+
+.related-container {
+  grid-template-rows: 1fr;
+}
